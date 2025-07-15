@@ -1,7 +1,8 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
-import HomePage from './components/HomePage';
-import ContactPage from './components/ContactPage';
-import MenuIcon from './components/icons/MenuIcon';
+import HomePage from './components/HomePage.tsx';
+import ContactPage from './components/ContactPage.tsx';
+import MenuIcon from './components/icons/MenuIcon.tsx';
 
 export type Page = 'home' | 'contact';
 

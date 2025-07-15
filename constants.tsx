@@ -1,11 +1,11 @@
 
 import React from 'react';
-import BusinessConnectionsIcon from './components/icons/BusinessConnectionsIcon';
-import SpeedIcon from './components/icons/SpeedIcon';
-import LanguageTrainingIcon from './components/icons/LanguageTrainingIcon';
-import TranslationsIcon from './components/icons/TranslationsIcon';
-import TriedAndTrueIcon from './components/icons/TriedAndTrueIcon';
-import NoMiddlemanIcon from './components/icons/NoMiddlemanIcon';
+import BusinessConnectionsIcon from './components/icons/BusinessConnectionsIcon.tsx';
+import SpeedIcon from './components/icons/SpeedIcon.tsx';
+import LanguageTrainingIcon from './components/icons/LanguageTrainingIcon.tsx';
+import TranslationsIcon from './components/icons/TranslationsIcon.tsx';
+import TriedAndTrueIcon from './components/icons/TriedAndTrueIcon.tsx';
+import NoMiddlemanIcon from './components/icons/NoMiddlemanIcon.tsx';
 
 export const serviceData = [
     {
