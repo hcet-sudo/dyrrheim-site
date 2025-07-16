@@ -1,9 +1,12 @@
+
+
+
 import React from 'react';
-import type { Page } from '../App';
-import LogoIcon from './icons/LogoIcon';
-import ServiceCard from './ServiceCard';
-import Footer from './Footer';
-import { serviceData } from '../constants';
+import type { Page } from '../App.tsx';
+import LogoIcon from './icons/LogoIcon.tsx';
+import ServiceCard from './ServiceCard.tsx';
+import Footer from './Footer.tsx';
+import { serviceData } from '../constants.tsx';
 
 interface HomePageProps {
     onNavigate: (page: Page) => void;
@@ -22,10 +25,10 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     DYRRHEIM
                 </h2>
 
-                <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mt-4">
+                <h3 className="font-audiowide uppercase text-2xl md:text-4xl text-white leading-tight mt-4 tracking-widest">
                     Your <span className="text-cyan-400">gateway</span> to business
-                </h1>
-                <p className="text-2xl md:text-3xl font-light text-slate-300 mt-2">Your <span className="text-cyan-400 font-medium">PORTAL</span> to knowledge</p>
+                </h3>
+                <p className="font-audiowide uppercase text-xl md:text-2xl text-slate-300 mt-2 tracking-widest">Your <span className="text-cyan-400 font-medium">PORTAL</span> to knowledge</p>
 
                 <button
                     onClick={() => onNavigate('contact')}

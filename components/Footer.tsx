@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
                 <div>
                     <h4 className="text-sm uppercase tracking-widest text-slate-600 dark:text-slate-500 mb-6">Some companies we've worked with...</h4>
                     <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-                       <img src={linde} alt="Linde" className="h-8 w-auto transition-all duration-300 filter grayscale hover:grayscale-0" />
-                       <img src={san} alt="SAN" className="h-12 w-auto transition-all duration-300 filter grayscale hover:grayscale-0" />
-                       <img src={airproducts} alt="Air Products" className="h-8 w-auto transition-all duration-300 filter grayscale hover:grayscale-0" />
+                       <img loading="lazy" src={linde} alt="Linde" className="h-8 w-auto transition-all duration-300" />
+                       <img loading="lazy" src={san} alt="SAN" className="h-12 w-auto transition-all duration-300" />
+                       <img loading="lazy" src={airproducts} alt="Air Products" className="h-8 w-auto transition-all duration-300" />
                     </div>
                 </div>
             </div>
