@@ -1,4 +1,3 @@
-
 import React from 'react';
 import BusinessConnectionsIcon from './components/icons/BusinessConnectionsIcon.tsx';
 import SpeedIcon from './components/icons/SpeedIcon.tsx';
