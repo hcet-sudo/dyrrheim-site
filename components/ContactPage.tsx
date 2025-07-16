@@ -27,7 +27,9 @@ const ContactPage: React.FC = () => {
                 </div>
 
                 <a
-                    href="#"
+                    href="https://wa.me/447915607729"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-12 inline-flex items-center gap-3 bg-green-500 text-white font-bold py-4 px-8 rounded-full text-lg uppercase tracking-wider transition-all duration-300 ease-in-out hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-500/50"
                 >
                     <WhatsappIcon className="w-7 h-7" />
