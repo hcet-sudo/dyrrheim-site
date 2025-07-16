@@ -55,8 +55,9 @@ const App: React.FC = () => {
             <header className="absolute top-0 left-0 right-0 p-6 md:p-8 flex justify-between items-center z-50">
                 <button
                     onClick={() => navigateTo('home')}
-                    className="text-white hover:text-cyan-400 transition-colors duration-300"
-                    aria-label={currentPage === 'contact' ? "Go back to homepage" : "Go to homepage"}
+                    className={`text-white hover:text-cyan-400 transition-colors duration-300 ${currentPage === 'home' ? 'opacity-0 pointer-events-none' : ''}`}
+                    aria-label={currentPage === 'contact' ? "Go back to homepage" : "Open menu"}
+                    aria-hidden={currentPage === 'home'}
                 >
                     {currentPage === 'contact' ? <ArrowLeftIcon className="w-8 h-8" /> : <MenuIcon className="w-8 h-8" />}
                 </button>
