@@ -1,18 +1,16 @@
 
-
-
 import React from 'react';
-import type { Page } from '../App.tsx';
 import LogoIcon from './icons/LogoIcon.tsx';
 import ServiceCard from './ServiceCard.tsx';
 import Footer from './Footer.tsx';
 import { serviceData } from '../constants.tsx';
 
-interface HomePageProps {
-    onNavigate: (page: Page) => void;
-}
+const HomePage: React.FC = () => {
+    const handleNavigate = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+        window.location.hash = '#/contact';
+    };
 
-const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     return (
         <>
             <div className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden pt-24 pb-12 bg-slate-900">
@@ -30,12 +28,13 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </h3>
                 <p className="font-audiowide uppercase text-xl md:text-2xl text-slate-300 mt-2 tracking-widest">Your <span className="text-cyan-400 font-medium">PORTAL</span> to knowledge</p>
 
-                <button
-                    onClick={() => onNavigate('contact')}
+                <a
+                    href="#/contact"
+                    onClick={handleNavigate}
                     className="mt-12 bg-cyan-500 text-white font-bold py-3 px-10 rounded-full text-lg uppercase tracking-wider transition-all duration-300 ease-in-out transform hover:scale-110 hover:bg-cyan-600 shadow-lg hover:shadow-cyan-500/40 focus:outline-none focus:ring-4 focus:ring-cyan-500/50"
                 >
                     Contact us
-                </button>
+                </a>
             </div>
 
             <div className="bg-slate-50 dark:bg-slate-900 py-16 px-4 sm:px-6 lg:px-8">
